@@ -1,0 +1,85 @@
+{
+  "name": "@developerisnow/git-statistic-analyzer",
+  "version": "1.0.0",
+  "description": "A powerful tool for analyzing multiple Git repositories and generating comprehensive statistics",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "git-statistic": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --coverageThreshold.global.branches=0 --coverageThreshold.global.functions=0 --coverageThreshold.global.lines=0 --coverageThreshold.global.statements=0",
+    "lint": "eslint 'src/**/*.ts' --fix",
+    "lint:check": "eslint 'src/**/*.ts'",
+    "format": "prettier --write 'src/**/*.ts'",
+    "clean": "rimraf dist coverage",
+    "prepare": "npm run clean && npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "scan:all": "ts-node src/cli.ts --folderPath=all --repoList=all",
+    "scan:empty": "ts-node src/cli.ts --folderPath=all --repoList=all --filter \"UsernamesUrlRepos:Empty\"",
+    "scan:user": "ts-node src/cli.ts --folderPath=all --repoList=all --filter"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "git_statistic.example.csv"
+  ],
+  "keywords": [
+    "git",
+    "repository",
+    "analysis",
+    "statistics",
+    "metrics",
+    "bulk",
+    "scanner",
+    "git-tools",
+    "developer-tools",
+    "repository-analysis"
+  ],
+  "author": {
+    "name": "developerisnow",
+    "url": "https://github.com/developerisnow"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developerisnow/git-statistic-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/developerisnow/git-statistic-analyzer/issues"
+  },
+  "homepage": "https://github.com/developerisnow/git-statistic-analyzer#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "csv-stringify": "^6.4.4",
+    "glob": "^10.3.10",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.8.9",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "eslint": "^8.52.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 

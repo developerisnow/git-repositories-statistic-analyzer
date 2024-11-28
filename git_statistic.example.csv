@@ -1,0 +1,4 @@
+nameFolder,usernamesUrlRepos,gitFolderSize,dateLastCommit,messageLastCommit,amountTotalCommits,ageRepo,dateFirstCommit,urlsRepo,amountUncommitedFiles,hashLastCommit,pathFolder
+example-repo,developerisnow,15.2,2024-03-15,feat: add new feature,125,90,2023-12-15,github.com/developerisnow/example-repo.git,0,a1b2c3d4e5f6,/Users/user/Projects/example-repo
+local-project,,2.5,2024-03-10,initial commit,1,0,2024-03-10,,0,f6e5d4c3b2a1,/Users/user/Projects/local-project
+big-project,developerisnow,250.8,2024-03-01,refactor: improve performance,1500,365,2023-03-01,github.com/developerisnow/big-project.git,3,1a2b3c4d5e6f,/Users/user/Projects/big-project 
