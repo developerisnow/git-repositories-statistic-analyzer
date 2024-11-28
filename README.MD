@@ -1,6 +1,6 @@
-# Git Repository Statistics Analyzer
+# Git Repositories Statistics Analyzer
 
-[![npm version](https://badge.fury.io/js/%40developerisnow%2Fgit-statistic-analyzer.svg)](https://www.npmjs.com/package/@developerisnow/git-statistic-analyzer)
+[![npm version](https://badge.fury.io/js/%40developerisnow%2Fgit-repositories-statistic-analyzer.svg)](https://www.npmjs.com/package/@developerisnow/git-repositories-statistic-analyzer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 
@@ -21,13 +21,13 @@ A powerful Node.js tool for analyzing multiple Git repositories and generating c
 
 ```bash
 # Using npm
-npm install -g @developerisnow/git-statistic-analyzer
+npm install -g @developerisnow/git-repositories-statistic-analyzer
 
 # Using pnpm (recommended)
-pnpm add -g @developerisnow/git-statistic-analyzer
+pnpm add -g @developerisnow/git-repositories-statistic-analyzer
 
 # Using yarn
-yarn global add @developerisnow/git-statistic-analyzer
+yarn global add @developerisnow/git-repositories-statistic-analyzer
 ```
 
 ## 🎮 Command Line Usage
@@ -36,16 +36,16 @@ yarn global add @developerisnow/git-statistic-analyzer
 
 ```bash
 # Analyze specific repositories
-git-statistic --folderPath=/path/to/repos --repoList=/path/to/repo_list.txt
+git-repositories-statistic-analyzer --folderPath=/path/to/repos --repoList=/path/to/repo_list.txt
 
 # Scan all repositories in the system
-git-statistic --folderPath=all --repoList=all
+git-repositories-statistic-analyzer --folderPath=all --repoList=all
 
 # Filter repositories by username
-git-statistic --folderPath=all --repoList=all --filter "UsernamesUrlRepos:username1,username2"
+git-repositories-statistic-analyzer --folderPath=all --repoList=all --filter "UsernamesUrlRepos:username1,username2"
 
 # Find local repositories (no remote URLs)
-git-statistic --folderPath=all --repoList=all --filter "UsernamesUrlRepos:Empty"
+git-repositories-statistic-analyzer --folderPath=all --repoList=all --filter "UsernamesUrlRepos:Empty"
 ```
 
 ### Options
@@ -57,7 +57,7 @@ git-statistic --folderPath=all --repoList=all --filter "UsernamesUrlRepos:Empty"
 ## 💻 Programmatic Usage
 
 ```typescript
-import { GitAnalyzer, GitScanner } from '@developerisnow/git-statistic-analyzer';
+import { GitAnalyzer, GitScanner } from '@developerisnow/git-repositories-statistic-analyzer';
 
 async function analyzeRepositories() {
   // Load ignore patterns

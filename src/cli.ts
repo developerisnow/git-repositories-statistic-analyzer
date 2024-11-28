@@ -8,6 +8,10 @@ import { GitAnalyzer } from "./GitAnalyzer";
 import { GitScanner } from "./GitScanner";
 import { GitRepositoryStats } from "./types";
 
+const PROGRAM_NAME = "git-repositories-statistic-analyzer";
+const VERSION = "1.0.0";
+const DESCRIPTION = "Analyze Git repositories and generate statistics";
+
 const CSV_HEADERS = [
   "nameFolder",
   "usernamesUrlRepos",
@@ -100,9 +104,9 @@ async function processRepositories(
 }
 
 program
-  .name("git-statistic")
-  .description("Analyze Git repositories and generate statistics")
-  .version("1.0.0")
+  .name(PROGRAM_NAME)
+  .description(DESCRIPTION)
+  .version(VERSION)
   .requiredOption(
     "--folderPath <path>",
     'Base path containing Git repositories or "all" for system scan',

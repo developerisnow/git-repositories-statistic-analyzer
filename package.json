@@ -1,11 +1,11 @@
 {
-  "name": "@developerisnow/git-statistic-analyzer",
+  "name": "@developerisnow/git-repositories-statistic-analyzer",
   "version": "1.0.0",
   "description": "A powerful tool for analyzing multiple Git repositories and generating comprehensive statistics",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "git-statistic": "./dist/cli.js"
+    "git-repositories-statistic-analyzer": "./dist/cli.js"
   },
   "scripts": {
     "build": "tsc",
@@ -49,12 +49,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/developerisnow/git-statistic-analyzer.git"
+    "url": "git+https://github.com/developerisnow/git-repositories-statistic-analyzer.git"
   },
   "bugs": {
-    "url": "https://github.com/developerisnow/git-statistic-analyzer/issues"
+    "url": "https://github.com/developerisnow/git-repositories-statistic-analyzer/issues"
   },
-  "homepage": "https://github.com/developerisnow/git-statistic-analyzer#readme",
+  "homepage": "https://github.com/developerisnow/git-repositories-statistic-analyzer#readme",
   "publishConfig": {
     "access": "public"
   },
