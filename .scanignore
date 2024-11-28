@@ -1,0 +1,35 @@
+# Node.js
+**/node_modules/**
+**/dist/**
+**/build/**
+
+# Version control
+**/.git/**
+**/.svn/**
+
+# IDE and editors
+**/.idea/**
+**/.vscode/**
+**/.vs/**
+
+# Build outputs
+**/out/**
+**/target/**
+**/bin/**
+
+# Package managers
+**/vendor/**
+**/bower_components/**
+
+# Temporary files
+**/tmp/**
+**/temp/**
+**/cache/**
+
+# Auto-generated files
+**/auto_gpt_workspace/**
+**/broken_repos/**
+
+# OS specific
+**/.DS_Store
+**/Thumbs.db 

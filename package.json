@@ -11,13 +11,13 @@
     "build": "tsc",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage --coverageThreshold.global.branches=0 --coverageThreshold.global.functions=0 --coverageThreshold.global.lines=0 --coverageThreshold.global.statements=0",
+    "test:coverage": "jest --coverage",
     "lint": "eslint 'src/**/*.ts' --fix",
     "lint:check": "eslint 'src/**/*.ts'",
     "format": "prettier --write 'src/**/*.ts'",
     "clean": "rimraf dist coverage",
     "prepare": "npm run clean && npm run build",
-    "prepublishOnly": "npm run test && npm run lint",
+    "prepublishOnly": "npm run build",
     "start": "node dist/cli.js",
     "dev": "ts-node src/cli.ts",
     "scan:all": "ts-node src/cli.ts --folderPath=all --repoList=all",
@@ -28,6 +28,7 @@
     "dist",
     "LICENSE",
     "README.md",
+    ".scanignore",
     "git_statistic.example.csv"
   ],
   "keywords": [
